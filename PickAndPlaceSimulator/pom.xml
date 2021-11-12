@@ -25,6 +25,12 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+	    <groupId>com.konghq</groupId>
+	    <artifactId>unirest-java</artifactId>
+	    <version>3.13.3</version>
+	    <classifier>standalone</classifier>
+	</dependency>
   </dependencies>
 
   <build>
@@ -66,7 +72,7 @@
             <artifactId>exec-maven-plugin</artifactId>
             <version>3.0.0</version>
             <configuration>
-                <mainClass>Elastic.PickAndPlaceSimulator.App.main</mainClass>
+                <mainClass>Elastic.PickAndPlaceSimulator.App</mainClass>
             </configuration>
         </plugin>
         <plugin>

@@ -9,12 +9,12 @@ import Elastic.PickAndPlaceSimulator.EventGenerator.PickAndPlaceEvents.PickAndPl
 
 public class PickAndPlaceEventGenerator {
 	
-	public PickAndPlaceEventGenerator() {
+	public PickAndPlaceEventGenerator(String getInfoLoc) {
 		
 		BlockingQueue<Elastic.PickAndPlaceSimulator.EventGenerator.PickAndPlaceEvents.PickAndPlaceEvent> eventQueue = new LinkedBlockingDeque<>(2);
 		ExecutorService executor = Executors.newFixedThreadPool(2);		
 		
-		PickAndPlaceState systemState = new PickAndPlaceState();		
+		PickAndPlaceState systemState = new PickAndPlaceState(getInfoLoc);		
 		
 		//A thread that produces events		
 		Runnable producerTask = () -> {
