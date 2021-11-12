@@ -1,7 +1,6 @@
 package Elastic.PickAndPlaceSimulator;
 
 import Elastic.PickAndPlaceSimulator.EventGenerator.PickAndPlaceEventGenerator;
-import Elastic.PickAndPlaceSimulator.SimpleUI.SimpleUI;
 
 
 public class App 

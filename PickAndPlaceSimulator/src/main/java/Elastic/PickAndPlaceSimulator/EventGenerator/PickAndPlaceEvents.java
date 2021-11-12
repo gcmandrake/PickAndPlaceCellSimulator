@@ -3,9 +3,9 @@ package Elastic.PickAndPlaceSimulator.EventGenerator;
 public class PickAndPlaceEvents {
 	
 	//Must total 1!
-	public final static double START_PROBABILITY = 0.1;
+	public final static double START_PROBABILITY = 0.2;
 	public final static double STOP_PROBABILITY = 0.4;
-	public final static double CONT_PROBABILTIY = 0.5;
+	public final static double CONT_PROBABILTIY = 0.4;
 	
 	public enum PickAndPlaceEvent {
 		START,
